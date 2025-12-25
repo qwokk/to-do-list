@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    padding: 40px;
+}
+
+.todo-item {
+    margin: 8px 0;
+}
+
+.delete-btn {
+    margin-left: 12px;
+    color: red;
+    cursor: pointer;
+}
