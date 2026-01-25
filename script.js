@@ -9,4 +9,13 @@ addBtn.addEventListener("click", function() {
     const li = document.createElement("li");
     li.className = "todo-item";
     li.textContent = taskText;
+
+    const delBtn = document.createElement("span");
+    delBtn.className = "delete-btn";
+    delBtn.textContent = "×";
+    li.appendChild(delBtn);
+
+    todoList.appendChild(li);
+
+    taskInput.value = "";
 });
