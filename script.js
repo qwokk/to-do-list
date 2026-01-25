@@ -18,4 +18,10 @@ addBtn.addEventListener("click", function() {
     todoList.appendChild(li);
 
     taskInput.value = "";
+    taskInput.focus();
+});
+
+todoList.addEventListener("click", function(event) {
+    if (event.target.classList.contains("delete-btn")) {
+        event.target.parentElement.remove();
 });
